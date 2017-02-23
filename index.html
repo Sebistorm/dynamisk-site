@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Statisk site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cabin|Montserrat');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- nav -->
+
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+                    <span class="sr-only"> toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand" href="index.html">Petrograd</a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsemenu">
+                <ul class="nav navbar-nav ">
+                    <li><a class="nav_margin" href="index.html">Home</a></li>
+                    <li><a href="#">Forretter</a></li>
+                    <li><a href="#hovedretter">Hovedretter</a></li>
+                    <li><a href="#">Desserter</a></li>
+                    <li><a href="#">Drikkevarer</a></li>
+                    <li><a href="#">Sideorders</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- splashbillede -->
+
+    <div class="container-fluid">
+        <div class="row home_splash_bg content_home_splash">
+            <h1 class="white_home_h1 text-center text-uppercase">Petrograd</h1>
+            <div class="white_home_h-line center-block"></div>
+            <p class="om_tekst text-center tipi_wrapper"> Vi laver rigtigt russisk mad, ligesom vores forfædre gjorde i Rusland!
+                <br>
+                <br> Tjek vores russiske delikatesser nedenunder!
+                <br>
+                <br> Kom ned og smag rigtigt russisk mad!
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- sorterings-afdeling -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="btn-group col-xs-8 col-md-offset-0 col-md-4 col-md-offset-2">
+                <button type="button" class="btn btn-primary sortering_knapper">Standard</button>
+                <button type="button" class="btn btn-primary sortering_knapper">Rabat-pris</button>
+                <button type="button" class="btn btn-primary sortering_knapper">Vegetar-egnethed</button>
+            </div>
+
+
+            <div class="dropdown col-xs-4 col-xs-offset-0 col-xs-push-0 col-md-4 col-md-offset-0 col-md-push-4">
+                <button class="btn btn-primary sortering_dropdown dropdown-toggle" type="button" data-toggle="dropdown">Sortering
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Navn</a></li>
+                    <li><a href="#">Billede</a></li>
+                    <li><a href="#">Pris</a></li>
+                    <li><a href="#">Udsolgt-status</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid content_menu">
+
+        <h1 id="hovedretter" class="text-center black_home_h1"> Hovedretter</h1>
+        <div class="black_home_h-line center-block"></div>
+        <div class="row">
+
+            <!-- hovedret 1 -->
+
+            <div class="hovedret_1 col-md-4 col-xs-6">
+                <div id="person_info1" class="border">
+                    <img src="imgs/large/dynryp.jpg" alt="dynryp" class="img-responsive img_size">
+                    <div class="info text-center">
+                        <h2> <span class="data_madnavn text-center">Dynryp</span> </h2>
+                        <p><em> Pris: <span class="data_pris "> 149 </span> kr. </em> </p>
+                        <p> <span class="data_kortbeskrivelse "> <strong> Russisk bulgur med skovsvampe </strong></span> </p>
+                        <p> <span class="data_udsolgt "></span> </p>
+                    </div>
+                    <div class="læs mere text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary modalknap modalknap_margin_bottom  " data-toggle="modal" data-target="#myModal">
+                            <em> Læs mere</em>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> <strong>Udvidet Info</strong></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <strong> Navn: <span class="data_fornavn2">Dynryp</span> </strong>
+                            <p> Pris: <span class="data_pris "> 149 </span> kr. </p>
+                            <br> Kategori: <span class="data_kategori"> </span> Hovedret
+                            <br> Lang Beskrivelse: <span class="colorbox data_langBeskrivelse"></span> Dynrup - Russisk bulgur med skovsvampe fra det østlige Kirgisistan. Svampene minder om kantarelle, men med en mere støvet smag.
+                            <br> Oprindelsesregion: <span class="data_livret"> </span> Rusland
+                            <br> Vegetar: <span class="data_vegetar"> </span> 1
+                            <br> Allergener: <span class="data_allergener"> </span> ingen
+                            <br> Alkoholprocent: <span class="data_alkoholprocent">0</span> %
+                            <br> Stjerner: <span class="data_stjerner"> </span> 1 Stjerne
+                            <br> Relaterede: <span class="data_relaterede"> </span> ret 55 & 77
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- hovedret 2 -->
+
+            <div class="hovedret_2 col-md-4 col-xs-6">
+                <div id="person_info2" class="border">
+                    <img src="imgs/large/bondeplatte.jpg" alt="Bondeplatte" class="img-responsive img_size">
+                    <div class="info text-center">
+                        <h2> <span class="data_madnavn text-center">Zygroffs bondeplatte</span> </h2>
+                        <p><em> Pris: <span class="data_pris "> 109 </span> kr. </em> </p>
+                        <p> <span class="data_kortbeskrivelse "> <strong> Zygroffs bondeplatte - bøndernes svar på Tapas</strong></span>
+                        </p>
+                        <p> <span class="data_udsolgt "></span> </p>
+                    </div>
+                    <div class="læs mere text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary modalknap modalknap_margin_bottom  " data-toggle="modal" data-target="#myModal">
+                            <em>Læs mere</em>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Udvidet Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Navn: <span class="data_fornavn2">Zygroffs bondeplatte</span>
+                            <br> Pris: 109 <span class="data_pris"></span> kr.
+                            <br> Kategori: <span class="data_kategori"> </span> Hovedret
+                            <br> Lang Beskrivelse: <span class="colorbox data_langBeskrivelse"></span> Under de trange vilkår på landet Sibirien, bød husmændene på Zygroffs bondeplatte, når der var fest. Gode, grove grøntsager, tørret bøffelkod og masser af æg. Specielt for bondeplatten blev de dejlige caviar skiftet ud med billige kapers. Tryk på genvejen Ctrl+Alt+Z. for at aktivere support til skærmlæser. Tryk på genvejen Ctrl+skråstreg. for at få oplysninger om tastaturgenveje.
+                            <br> Oprindelsesregion: <span class="data_livret"> </span> Sibirien
+                            <br> Vegetar: <span class="data_vegetar"> </span> Nej
+                            <br> Allergener: <span class="data_allergener"> </span> laktose
+                            <br> Alkoholprocent: <span class="data_alkoholprocent">0</span> %
+                            <br> Stjerner: <span class="data_stjerner"> </span> 4 Stjerne
+                            <br> Relaterede: <span class="data_relaterede"> </span> ret 55
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- hovedret 3 -->
+
+            <div class="hovedret_3 col-md-4 col-xs-6">
+                <div id="person_info3" class="border">
+                    <img src="imgs/large/boef.jpg" alt="Bøf" class="img-responsive img_size">
+                    <div class="info text-center">
+                        <h2> <span class="data_madnavn text-center">Diplomat-bøf med grønt</span> </h2>
+                        <p> <em> Pris: <span class="data_pris "> 179 </span> kr. </em> </p>
+                        <p> <span class="data_kortbeskrivelse "> <strong> Diplomat-bøf med grønt </strong> </span>
+                        </p>
+                        <p> <span class="data_udsolgt "></span> </p>
+                    </div>
+                    <div class="læs mere text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary modalknap modalknap_margin_bottom  " data-toggle="modal" data-target="#myModal">
+                            <em>Læs mere </em>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel3">Udvidet Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Navn: <span class="data_fornavn2">Diplomat-bøf med grønt</span>
+                            <br> Pris: 179 <span class="data_pris"></span> kr.
+                            <br> Kategori: <span class="data_kategori"> </span> Hovedret
+                            <br> Lang Beskrivelse: <span class="data_langBeskrivelse"></span> Diplomatiet har haft mange udfordringer i USSR. Derfor blev der sørget godt for dem, og som nogen af de få, fik diplomaterne mange bøffer under den kolde krig. Diplomat-bøffen med grillede grøntsager og koldpresset olie er af ypperste kvalitet - kødet kommer fra udsultede ungkalve i Viktoriagrad. Tryk på genvejen Ctrl+Alt+Z. for at aktivere support til skærmlæser. Tryk på genvejen Ctrl+skråstreg. for at få oplysninger om tastaturgenveje.
+                            <br> Oprindelsesregion: <span class="data_livret"> </span> Viktoriagrad
+                            <br> Vegetar: <span class="data_vegetar"> </span> nej
+                            <br> Allergener: <span class="data_allergener"> </span> ingen
+                            <br> Alkoholprocent: <span class="data_alkoholprocent">0</span> %
+                            <br> Stjerner: <span class="data_stjerner"> </span> 2 Stjerne
+                            <br> Relaterede: <span class="data_relaterede"> </span> ret 65
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- hovedret 4 -->
+
+            <div class="hovedret_4 col-md-4 col-xs-6">
+                <div id="person_info4" class="border">
+                    <img src="imgs/large/moldaviskfiskesuppe.jpg" alt="Moldaviskfiskesuppe" class="img-responsive img_size">
+                    <div class="info text-center">
+                        <h2> <span class="data_madnavn text-center">Moldavisk fiskesuppe</span> </h2>
+                        <p> <em> Pris: <span class="data_pris "> 139 </span> kr. </em> </p>
+                        <p> <span class="data_kortbeskrivelse "> <strong> Den dejlige, alkoholholdige moldaviske fiskesuppe </strong> </span>
+                        </p>
+                        <p> <span class="data_udsolgt "></span> </p>
+                    </div>
+                    <div class="læs mere text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary modalknap modalknap_margin_bottom " data-toggle="modal" data-target="#myModal">
+                            <em>Læs mere</em>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel4">Udvidet Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Navn: <span class="data_fornavn2">Moldavisk fiskesuppe</span>
+                            <br> Pris: 139 <span class="data_pris"></span> kr.
+                            <br> Kategori: <span class="data_kategori"> </span> Hovedret
+                            <br> Lang Beskrivelse: <span class="data_langBeskrivelse"></span> Denne suppe fra Moldavien er unik ved at være forholdsvis stærk. Suppen koges på basis af Zyganoff Vodka i 24 timer. Meget af alkoholen damper væk, men der er typisk en rest på ca. 8% alkohol tilbage, så spiser du godt med suppe, skal du nok blive bims. Tryk på genvejen Ctrl+Alt+Z. for at aktivere support til skærmlæser. Tryk på genvejen Ctrl+skråstreg. for at få oplysninger om tastaturgenveje.
+                            <br> Oprindelsesregion: <span class="data_livret"> </span> Moldavien
+                            <br> Vegetar: <span class="data_vegetar"> </span> Nej
+                            <br> Allergener: <span class="data_allergener"> </span> ingen
+                            <br> Alkoholprocent: <span class="data_alkoholprocent"> 8 </span> %
+                            <br> Stjerner: <span class="data_stjerner"> </span> 5 Stjerne
+                            <br> Relaterede: <span class="data_relaterede"> </span> ret 76 & 78
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container-fluid hidden-xs">
+            <div class="row">
+                <div class="sectionwrapper ">
+                    <!--
+            <div class="logobottom">
+                <img src="img/hvidt_logo_text_right.svg" alt="KYOTO">
+            </div>
+
+-->
+                    <div class="column text1 col-md-3 col-md-offset-0 col-md-pull-0 col-sm-6 col-sm-offset-0 col-sm-pull-0 col-xs-4 col-xs-offset-2 col-xs-pull-2">
+                        <ul>
+                            <li class="header">Åbeningstider</li>
+                            <li>Man-ons: </li>
+                            <li>Tors-Fre: </li>
+                            <li>Lør: </li>
+                            <li>Søn: </li>
+                        </ul>
+                    </div>
+                    <div class="column text2 col-md-3 col-md-offset-0 col-md-pull-0 col-sm-6 col-sm-offset-0 col-sm-pull-0 col-xs-4 col-xs-offset-2 col-xs-pull-1">
+                        <ul>
+                            <li class="header">Addresse</li>
+                            <li>Adresse 1</li>
+                            <li>By , postnr</li>
+                            <li>Land</li>
+                            <a href="#">Find us on maps here</a>
+                        </ul>
+                    </div>
+                    <div class="column text3 col-md-3 col-md-offset-0 col-md-pull-0 col-sm-6 col-sm-offset-0 col-sm-pull-0 col-xs-4 col-xs-offset-2 col-xs-pull-2">
+                        <ul>
+                            <li class="header">Kontakt</li>
+                            <li>Petrograd@gmail.com
+                            </li>
+                            <li>+45 xx xx xx xx
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column social col-md-3 col-md-offset-0 col-md-pull-0 col-sm-6 col-sm-offset-0 col-sm-pull-0 col-xs-4 col-xs-offset-2 col-xs-pull-1">
+                        <ul>
+                            <li class="header">Følg os!</li>
+                            <li class="icons">
+
+                                <a href="#" target="_blank"><img src="img/instagram.png" alt="Instagram"> </a>
+                                <a href="#" target="_blank">
+                                    <img src="img/facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

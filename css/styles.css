@@ -1,0 +1,197 @@
+/*!
+ * Custom styles af DIG
+ */
+
+
+/*Generelt*/
+
+body {}
+
+.navbar {
+    margin-bottom: 0px;
+    margin: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#mainNav {
+    margin-bottom: 10vw;
+}
+
+h1 {
+    font-family: Montserrat;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 2.5em;
+}
+
+p {
+    font-family: cabin;
+    font-size: 1.3em;
+}
+
+.udvidetinfo_p {
+    font-family: cabin;
+    font-size: 1.3em
+}
+
+.content_home_splash {
+    margin-top: 2vw;
+}
+
+.content_menu {
+    margin-top: 3vw;
+}
+
+.home_splash_bg {
+    background-image: url(../imgs/redi/russisktapas-splash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 360px;
+    height: 360px;
+    min-height: 360px;
+    background-position: center;
+    margin-bottom: 2vw;
+}
+
+.white_home_h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 4em;
+    color: white;
+}
+
+.black_home_h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 4em;
+    color: black;
+}
+
+.white_home_h-line {
+    border-top: ;
+    border-top-style: solid;
+    border-top-width: medium;
+    max-width: 400px;
+    width: 350px;
+    min-width: 150px;
+    vertical-align: middle;
+    border-top-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.black_home_h-line {
+    border-top: ;
+    border-top-style: solid;
+    border-top-width: medium;
+    max-width: 400px;
+    width: 350px;
+    min-width: 150px;
+    vertical-align: middle;
+    border-top-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.om_tekst {
+    color: white;
+    font-size: 1.3em
+}
+
+.sortering_knapper {
+    background-color: white;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.sortering_dropdown {
+    background-color: white;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.modalknap_margin_bottom {
+    margin-bottom: 1vw;
+}
+
+.border {
+    border: 3px solid black;
+    margin-bottom: 2vw;
+}
+
+
+/*  Footer  */
+
+footer ul {
+    color: #eeeeee;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+}
+
+.column {
+    padding-top: 8px;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+footer .sectionwrapper {
+    background-color: #171717;
+    width: 100%;
+    padding-bottom: 170px;
+    height: 300px;
+}
+
+footer .logobottom img {
+    height: 142px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    font-size: 16px;
+    padding-bottom: 7px;
+    color: #FFB100;
+    font-family: Montserrat, sans-serif;
+}
+
+li img {
+    max-width: 50px;
+}
+
+
+/*  media queries  */
+
+@media screen and (max-width: 1366px) {
+    .content_home_splash {
+        margin-top: 3.5vw;
+    }
+    h2 {
+        font-family: Montserrat;
+        font-size: 1.8em;
+    }
+    p {
+        font-family: cabin;
+        font-size: 1.0em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content_home_splash {
+        margin-top: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .content_home_splash {
+        margin-top: 6.5vw;
+    }
+}
