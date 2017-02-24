@@ -72,9 +72,11 @@
         <div class="row">
 
             <div class="btn-group col-xs-8 col-md-offset-0 col-md-4 col-md-offset-2">
-                <button type="button" class="btn btn-primary sortering_knapper">Standard</button>
-                <button type="button" class="btn btn-primary sortering_knapper">Rabat-pris</button>
-                <button type="button" class="btn btn-primary sortering_knapper">Vegetar-egnethed</button>
+                <button type="button" class="btn btn-primary sortering_knapper sortering_knapper_ikkevegetar ">Ikke vegetar</button>
+                <button type="button" class="btn btn-primary sortering_knapper sortering_knapper_vegetar">Vegetar</button>
+                <button type="button" class="btn btn-primary sortering_knapper sortering_knapper_tilbud">Tilbud</button>
+                <button type="button" class="btn btn-primary sortering_knapper sortering_knapper_udenalkohol">Uden alkohol</button>
+
             </div>
 
 
@@ -92,6 +94,34 @@
 
     </div>
 
+    <!-- sorterings-slut -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- her skal min modal_template være -->
+
+            </div>
+        </div>
+    </div>
+
+    <template id="modal_template">
+        <div class="modal-header">
+            <h5 class="modal-title"> <strong>Udvidet Info</strong></h5>
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <h3> <span class="data_navn">DATA_NAVN</span> </h3>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </template>
+
     <div class="container-fluid content_menu">
 
         <h1 id="hovedretter" class="text-center black_home_h1"> Hovedretter</h1>
@@ -103,7 +133,7 @@
             <!-- hovedret 1 -->
 
             <template id="produkt_template">
-                <div class="hovedret_1 col-md-4 col-xs-6">
+                <div class="produkt col-md-4 col-xs-6">
                     <div id="person_info1" class="border">
                         <img src="imgs/large/dynryp.jpg" alt="dynryp" class="img-responsive data_billede img_size" alt="billede">
                         <div class="info text-center">
@@ -119,12 +149,14 @@
                         <div class="læs mere text-center">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary modalknap modalknap_margin_bottom  " data-toggle="modal" data-target="#myModal">
-                                <em> Læs mere</em>
+                                Læs mere
                             </button>
                         </div>
                     </div>
                 </div>
             </template>
+
+
 
 
 

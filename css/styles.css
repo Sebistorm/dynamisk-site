@@ -50,6 +50,32 @@ p {
     margin-top: 3vw;
 }
 
+
+/* filtrering start */
+
+
+/*
+.produkt.tilbud {
+    background-color: yellow;
+}
+
+.produkt.vegetar {
+    background-color: green;
+}
+
+.produkt:not(vegetar) {
+    background-color: red;
+}
+
+.produkt.alkohol {
+    background-color: blueviolet;
+}
+
+*/
+
+
+/* filtrering slut */
+
 .home_splash_bg {
     background-image: url(../imgs/redi/russisktapas-splash.jpg);
     background-size: cover;
@@ -127,6 +153,10 @@ p {
 .border {
     border: 3px solid black;
     margin-bottom: 2vw;
+}
+
+.modalknap {
+    font-style: italic;
 }
 
 
