@@ -50,6 +50,11 @@ p {
     margin-top: 3vw;
 }
 
+.img_size {
+    max-height: 250px;
+    height: 250px;
+}
+
 
 /* filtrering start */
 

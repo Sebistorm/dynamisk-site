@@ -24,6 +24,7 @@ function filtrerVegetar() {
 
     // skjul dem - tilføj klassen "hide"
     liste.forEach(div => div.classList.add("hide"));
+
     event.preventDefault();
 
 }
@@ -35,6 +36,7 @@ function filtrerIkkeVegetar() {
 
     // skjul dem - tilføj klassen "hide"
     liste.forEach(div => div.classList.add("hide"));
+
     event.preventDefault();
 
 
@@ -48,6 +50,7 @@ function filtrertilbud() {
 
     // skjul dem - tilføj klassen "hide"
     liste.forEach(div => div.classList.add("hide"));
+
     event.preventDefault();
 
 }
@@ -59,6 +62,7 @@ function filtrerudenalkohol() {
 
     // skjul dem - tilføj klassen "hide"
     liste.forEach(div => div.classList.add("hide"));
+
     event.preventDefault();
 
 }
@@ -135,8 +139,36 @@ function visProdukt(produkt) {
     klon.querySelector(".modalknap").dataset.produkt = produkt.id;
     // registrer klik på modalknap
     klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik)
-        // append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+
+    // append klon til .produkt_liste
+    // document.querySelector(".produktliste").appendChild(klon);
+
+    // Hvis kategori var forret,  append til forretliste
+
+
+    // Hvis kategori var hovedret,  append til hovedretliste
+
+    if (produkt.kategori == "forretter") {
+        document.querySelector(".forretliste").appendChild(klon)
+
+    } else if (produkt.kategori == "hovedretter") {
+        document.querySelector(".hovedretliste").appendChild(klon)
+
+    } else if (produkt.kategori == "desserter") {
+        document.querySelector(".dessertliste").appendChild(klon)
+
+    } else if (produkt.kategori == "drikkevarer") {
+        document.querySelector(".drikkevareliste").appendChild(klon)
+
+    } else if (produkt.kategori == "sideorders")
+        document.querySelector(".sideordersliste").appendChild(klon)
+
+
+
+
+
+
+
 }
 
 function modalKnapKlik(event) {

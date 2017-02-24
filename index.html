@@ -38,11 +38,11 @@
             <div class="collapse navbar-collapse" id="collapsemenu">
                 <ul class="nav navbar-nav ">
                     <li><a class="nav_margin" href="index.html">Home</a></li>
-                    <li><a href="#">Forretter</a></li>
+                    <li><a href="#forretter">Forretter</a></li>
                     <li><a href="#hovedretter">Hovedretter</a></li>
-                    <li><a href="#">Desserter</a></li>
-                    <li><a href="#">Drikkevarer</a></li>
-                    <li><a href="#">Sideorders</a></li>
+                    <li><a href="#desserter">Desserter</a></li>
+                    <li><a href="#drikkevarer">Drikkevarer</a></li>
+                    <li><a href="#siderorders">Sideorders</a></li>
                 </ul>
             </div>
         </div>
@@ -124,8 +124,34 @@
 
     <div class="container-fluid content_menu">
 
-        <h1 id="hovedretter" class="text-center black_home_h1"> Hovedretter</h1>
-        <div class="black_home_h-line center-block"></div>
+        <div class="row forretliste">
+            <h1 id="forretter" class="text-center black_home_h1"> Forret</h1>
+            <div class="black_home_h-line center-block"></div>
+        </div>
+
+        <div class="row hovedretliste">
+            <h1 id="hovedretter" class="text-center black_home_h1"> Hovedretter</h1>
+            <div class="black_home_h-line center-block"></div>
+        </div>
+
+        <div class="row dessertliste">
+            <h1 id="desserter" class="text-center black_home_h1"> Desserter</h1>
+            <div class="black_home_h-line center-block"></div>
+        </div>
+
+        <div class="row drikkevareliste">
+            <h1 id="drikkevarer" class="text-center black_home_h1"> Drikkevarer</h1>
+            <div class="black_home_h-line center-block"></div>
+        </div>
+
+        <div class="row sideordersliste">
+            <h1 id="siderorders" class="text-center black_home_h1"> Sideorders</h1>
+            <div class="black_home_h-line center-block"></div>
+        </div>
+
+
+
+
         <div class="row produktliste">
             <!-- Her skal produkterne lægges ind -->
 
@@ -135,7 +161,9 @@
             <template id="produkt_template">
                 <div class="produkt col-md-4 col-xs-6">
                     <div id="person_info1" class="border">
-                        <img src="imgs/large/dynryp.jpg" alt="dynryp" class="img-responsive data_billede img_size" alt="billede">
+                        <div class="img_size">
+                            <img style='height: 100%; width: 100%; object-fit: cover' src="imgs/large/dynryp.jpg" alt="dynryp" class="img-responsive data_billede" alt="billede">
+                        </div>
                         <div class="info text-center">
                             <h3> <span class="data_navn text-center">DATA_NAVN</span> </h3>
                             <h4 class="pris"><em> Pris: <span class="data_pris "> DATA_PRIS </span> ,- </em> </h4>
